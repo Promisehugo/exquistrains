@@ -1,0 +1,27 @@
+li {
+  color: white;
+  background-color: red;
+  margin: 2px;
+}
+
+/* id selector */
+#shortArticle {
+  background: black;
+  color: white;
+}
+
+/* class */
+.my-list {
+  background: blue;
+  color: white;
+}
+
+.image-div {
+  background-image: url("../image/pic.jpg");
+  height: 300px;
+  width: 300px;
+}
+
+li[list-attribute="red"] {
+  background: purple;
+}
