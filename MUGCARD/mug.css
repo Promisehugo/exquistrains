@@ -19,8 +19,7 @@ body {
 
 .mug {
   background-color: white;
-  width: 100%;
-  max-width: 850px;
+  width: 70%;
   height: 500px;
   box-shadow: 16px 16px 28px 6px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -102,7 +101,7 @@ hr {
 }
 
 .add-to-basket {
-    background-color: white;
+  background-color: white;
 }
 
 .add-to-basket button {
@@ -189,4 +188,39 @@ select {
 
 .amount {
   font-weight: 600;
+}
+
+/* Media Queries 
+
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+
+*/
+
+@media screen and (max-width: 916px) {
+  hr {
+    display: none;
+  }
+
+  .mug {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mug__details {
+    width: 50%;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 520px) and (min-width: 320px) {
+  .mug__details {
+    width: 100%;
+    margin-top: 30px;
+  }
 }
